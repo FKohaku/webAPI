@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天気予報</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-container">
+        <h1>天気予報</h1>
+
+        <!-- 地域選択プルダウン -->
+        <label for="area-select">地域を選択:</label>
+        <select id="area-select">
+            <option value="東京都">東京都</option>
+            <option value="埼玉県">埼玉県</option>
+            <option value="神奈川県">神奈川県</option>
+            <option value="千葉県">千葉県</option>
+        </select>
+
+        <!-- 天気予報の情報を表示 -->
+        <div id="forecast-info" class="forecast-info">
+            <div class="weather-summary">
+                <img id="weather-icon-0" src="" alt="今日の天気アイコン" class="weather-icon">
+                <div>
+                    <p><strong>対象エリア:</strong> <span id="target-area"></span></p>
+                    <p><strong>天気:</strong> <span id="weather-description-0"></span></p>
+                    <p><strong>最高気温:</strong> <span id="high-temp-0"></span>℃</p>
+                    <p><strong>最低気温:</strong> <span id="low-temp-0"></span>℃</p>
+                </div>
+            </div>
+
+            <!-- 明日と明後日の予報 -->
+            <div class="weather-summary">
+                <img id="weather-icon-1" src="" alt="明日の天気アイコン" class="weather-icon">
+                <div>
+                    <p><strong>明日の天気:</strong> <span id="weather-description-1"></span></p>
+                    <p><strong>最高気温:</strong> <span id="high-temp-1"></span>℃</p>
+                    <p><strong>最低気温:</strong> <span id="low-temp-1"></span>℃</p>
+                </div>
+            </div>
+            
+            <div class="weather-summary">
+                <img id="weather-icon-2" src="" alt="明後日の天気アイコン" class="weather-icon">
+                <div>
+                    <p><strong>明後日の天気:</strong> <span id="weather-description-2"></span></p>
+                    <p><strong>最高気温:</strong> <span id="high-temp-2"></span>℃</p>
+                    <p><strong>最低気温:</strong> <span id="low-temp-2"></span>℃</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 12/13 古澤虎珀</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
